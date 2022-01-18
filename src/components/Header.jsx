@@ -33,7 +33,6 @@ function Header() {
   const history = useNavigate();
 
   const { currency, setCurrency } = CryptoState();
-  console.log(currency);
 
   const handleCurrency = (e) => {
     setCurrency(e.target.value);
