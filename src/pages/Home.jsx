@@ -1,9 +1,11 @@
 import Banner from '../components/Banner/Banner';
+import CoinsTable from '../components/CoinsTable';
 
 function Home() {
   return (
     <>
       <Banner />
+      <CoinsTable />
     </>
   );
 }
