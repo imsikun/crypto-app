@@ -61,7 +61,7 @@ function Carousel() {
             {profit && ' + '} {coin?.price_change_percentage_24h}
           </span>
         </span>
-        <span style={{ fontSize: 22, fontWeight: 500 }}>
+        <span style={{ fontSize: 22, fontWeight: 500, marginTop: 10 }}>
           {symbol} {coin?.current_price.toFixed(2)}
         </span>
       </Link>
