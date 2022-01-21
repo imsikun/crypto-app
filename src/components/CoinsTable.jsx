@@ -119,7 +119,9 @@ function CoinsTable() {
                 </TableHead>
                 <TableBody>
                   {handleSearchCoins()
+                    //for pagination
                     .slice((page - 1) * 10, (page - 1) * 10 + 10)
+                    //for displyaing the data
                     .map((row) => {
                       const profit = row.price_change_percentage_24h > 0;
                       return (
