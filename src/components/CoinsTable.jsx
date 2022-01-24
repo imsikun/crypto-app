@@ -44,7 +44,7 @@ function CoinsTable() {
 
   const { currency, symbol } = CryptoState();
 
-  let navigate = useNavigate();
+  let history = useNavigate();
 
   const classes = useStyles();
 
@@ -52,7 +52,6 @@ function CoinsTable() {
     setLoading(true);
     const { data } = await axios.get(CoinList(currency));
     setCoins(data);
-    console.log(data);
     setLoading(false);
   };
 
@@ -126,7 +125,7 @@ function CoinsTable() {
                       const profit = row.price_change_percentage_24h > 0;
                       return (
                         <TableRow
-                          onClick={() => navigate(`/coins/${row.id}`)}
+                          onClick={() => history(`/coins/${row.id}`)}
                           key={row.id}
                           className={classes.row}
                         >

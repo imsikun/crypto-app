@@ -21,7 +21,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/coin/:id' element={<CoinPage />} />
+        <Route path='/coins/:id' element={<CoinPage />} />
         <Route path='/notfound' element={<Notfound />} />
         <Route path='/*' element={<Notfound />} />
       </Routes>
